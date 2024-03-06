@@ -24,13 +24,13 @@
 
   if(age < 18){
 
-    let price = kmrange * (0.21 / 100 * 80);
+    price = kmrange * (0.21 / 100 * 80);
     console.log(price);
     document.getElementById('theresult').innerHTML = 'Prezzo del biglietto: ' + price.toFixed(2) +'€';
 
  } else if (age > 65){
 
-    let price = kmrange * (0.21 / 100 * 60);
+    price = kmrange * (0.21 / 100 * 60);
     console.log(price);
     document.getElementById('theresult').innerHTML = 'Prezzo del biglietto: ' + price.toFixed(2) +'€';
  }
