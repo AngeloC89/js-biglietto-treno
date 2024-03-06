@@ -17,14 +17,31 @@
 
  if(isNaN(kmrange) || (isNaN(age))){
     console.log('dati inseriti non validi.')
- }
+ document.getElementById('theresult').innerHTML = 'Dati inseriti non validi.';
+    
+ } else {
+    price = kmrange * 0.21;
 
- if(age < 18){
+  if(age < 18){
+
     let price = kmrange * (0.21 / 100 * 80);
     console.log(price);
- } else (age > 65){
+    document.getElementById('theresult').innerHTML = 'Prezzo del biglietto: ' + price.toFixed(2) +'€';
+
+ } else if (age > 65){
+
     let price = kmrange * (0.21 / 100 * 60);
     console.log(price);
+    document.getElementById('theresult').innerHTML = 'Prezzo del biglietto: ' + price.toFixed(2) +'€';
  }
+ document.getElementById('theresult').innerHTML = 'Prezzo del biglietto: ' + price.toFixed(2) +'€';
+ 
+}
+
+
+
+
+ 
+
 
 
