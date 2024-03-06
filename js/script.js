@@ -28,7 +28,7 @@
     console.log(price);
     document.getElementById('theresult').innerHTML = 'Prezzo del biglietto: ' + price.toFixed(2) +'€';
 
- } else if (age > 65){
+ } else if (age >= 65){
 
     price = price - (price * 40 / 100);
     console.log(price);
