@@ -8,8 +8,8 @@
 // L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
 
 
- let kmrange = prompt('Ciao, quanti km dovrai percorrere?');
- let age = prompt('Quanti anni hai?');
+ let kmrange = parseInt(prompt('Ciao, quanti km dovrai percorrere?'));
+ let age = parseInt(prompt('Quanti anni hai?'));
  let price = kmrange * (0.21);
 
  console.log(kmrange,age);
